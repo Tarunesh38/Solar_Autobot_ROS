@@ -34,9 +34,51 @@ Step3 : Git Clone the directory
 ```bash
 git clone https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/Software_Solar_Autobot/src/.git
 ```
-Step4
+Step4 : Move to workspace folder
 ```bash
-git clone https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/Software_Solar_Autobot/src/.git
+cd ~/solar_autobot_ws
+```
+Step5 : Colcon build
+```bash
+colcon build
+```
+or
+```bash
+colcon build --packages-select solar_autobot_ws
+```
+Step6 : Source your workspace
+```bash
+source ~/solar_autobot_ws/install.setup.bash
+```
+Step7 : Load your launch file in your workspace
+```bash
+cd ~/solar_autobot_ws
+```
+```bash
+ros2 launch solar_robot_spawner_pkg gazebo_world.launch.py
+```
+
+## Automate Your Robot 
+Load Controller Launch file to automate the robot
+```bash
+ros2 launch solar_robot_controller_pkg controller_estimator.launch.py
+```
+Let’s see what topics are active. Open a new terminal, and type:
+```bash
+ros2 topic list -t
+```
+
+## Manually move the robot
+Open a new terminal:
+```bash
+ros2 launch solar_robot_spawner_pkg gazebo_world.launch.py
+```
+Again, Open a new Terminal and Type:
+```bash
+sudo apt install ros-foxy-turtlebot3*
+```
+```bash
+ros2 run turtlebot3_teleop teleop_keyboard --ros-args --remap /cmd_vel:=/demo/cmd_vel
 ```
 
 ## Simulation
