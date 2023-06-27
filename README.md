@@ -13,6 +13,9 @@ Keywords: Two-wheel differential robot, Light sensors, Solar panel, Autonomous m
 
 *This project aims to simulate a Two-Wheel Autonomous Differential Drive Robot using ROS 2 and Gazebo. The novelty of this project lies in the implementation of a light detecting sensor that enables the robot to move towards the light.*
 
+## Team Members - Batch - B_17
+
+
 ## Requirements
 --> *_ROS2 Humble_*\
 --> *_Ubuntu 22.04_*\
@@ -107,3 +110,9 @@ In Rviz,
 --> Under Images tab, select Topic as image.raw
 --> Now image tab opens and you can see what the robot captures
 ![Robot5](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/696c20b8-3ce5-4290-b4be-19158cb71e47)
+
+## Hardware
+![Hardware](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/b4960dce-6e97-4154-9555-eb89739deaf9)
+![Hardware2](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/141b4a8d-57b6-4013-83aa-e16cdc430444)
+
+![66-660981_welcome-page-break-design-png](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/0d33ad8e-5e54-4bde-9094-514aa734f55f)
