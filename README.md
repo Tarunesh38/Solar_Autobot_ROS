@@ -30,5 +30,14 @@ Step2: Create a source folder
 mkdir src
 cd src
 ```
+Step3 : Git Clone the directory
+```bash
+git clone https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/Software_Solar_Autobot/src/.git
+```
+Step4
+```bash
+git clone https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/Software_Solar_Autobot/src/.git
+```
+
 ## Simulation
 https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/e0bdb9b3-3da0-4e1c-961a-e032e239929c
