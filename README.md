@@ -31,20 +31,20 @@ Step 1: Create a Workspace
 mkdir solar_autobot_ws
 cd solar_autobot_ws
 ```
-Step2: Create a source folder
+Step 2: Create a source folder
 ```bash
 mkdir src
 cd src
 ```
-Step3 : Git Clone the directory
+Step 3: Git Clone the directory
 ```bash
 git clone https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/Software_Solar_Autobot/src/.git
 ```
-Step4 : Move to workspace folder
+Step 4: Move to workspace folder
 ```bash
 cd ~/solar_autobot_ws
 ```
-Step5 : Colcon build
+Step 5: Colcon build
 ```bash
 colcon build
 ```
@@ -52,11 +52,11 @@ or
 ```bash
 colcon build --packages-select solar_autobot_ws
 ```
-Step6 : Source your workspace
+Step 6: Source your workspace
 ```bash
 source ~/solar_autobot_ws/install.setup.bash
 ```
-Step7 : Load your launch file in your workspace
+Step 7: Load your launch file in your workspace
 ```bash
 cd ~/solar_autobot_ws
 ```
