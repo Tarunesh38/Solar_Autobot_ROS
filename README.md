@@ -67,6 +67,8 @@ Let’s see what topics are active. Open a new terminal, and type:
 ```bash
 ros2 topic list -t
 ```
+## Solar Autobot in the World Moving in search of light source
+https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/3b064137-8781-474e-b8f4-938ec4041c77
 
 ## Manually move the robot
 Open a new terminal:
