@@ -30,3 +30,5 @@ Step2: Create a source folder
 mkdir src
 cd src
 ```
+## Simulation
+https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/e0bdb9b3-3da0-4e1c-961a-e032e239929c
