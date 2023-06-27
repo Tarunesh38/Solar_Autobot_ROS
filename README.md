@@ -16,7 +16,8 @@ Keywords: Two-wheel differential robot, Light sensors, Solar panel, Autonomous m
 ## Requirements
 --> *_ROS2 Humble_*\
 --> *_Ubuntu 22.04_*\
---> *_Gazebo Simulation tool_*
+--> *_Gazebo Simulation tool_*\
+--> #_Rviz Vizualization tool_*
 
 ## Setting up the package
 Step 1: Create a Workspace
@@ -87,6 +88,22 @@ sudo apt install ros-foxy-turtlebot3*
 ros2 run turtlebot3_teleop teleop_keyboard --ros-args --remap /cmd_vel:=/demo/cmd_vel
 ```
 
-
 ## Simulation
 https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/e0bdb9b3-3da0-4e1c-961a-e032e239929c
+
+
+## Spawing the camera in Rviz
+Open a new terminal
+```bash
+ros2 launch solar_robot_spawner_pkg gazebo_world.launch.py
+```
+Again, Open a new Terminal and Type:
+```bash
+rviz2
+```
+In Rviz,
+--> Set the Fixed Frame to Odom
+--> Click add and select Image
+--> Under Images tab, select Topic as image.raw
+--> Now image tab opens and you can see what the robot captures
+![Robot5](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/696c20b8-3ce5-4290-b4be-19158cb71e47)
