@@ -57,6 +57,9 @@ cd ~/solar_autobot_ws
 ```bash
 ros2 launch solar_robot_spawner_pkg gazebo_world.launch.py
 ```
+## Spawning robot in the world
+![Robot3](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/745b635c-a47c-4f64-99c0-e6e060762fb4)
+![Robot4](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/9dee1a7b-3ba9-4d2c-8d1b-719d82d895a9)
 
 ## Automate Your Robot 
 Load Controller Launch file to automate the robot
@@ -68,7 +71,8 @@ Let’s see what topics are active. Open a new terminal, and type:
 ros2 topic list -t
 ```
 ## Solar Autobot in the World Moving in search of light source
-https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/3b064137-8781-474e-b8f4-938ec4041c77
+![Robot](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/190ca019-1d24-43fe-8282-fd86489d9be3)
+![Robot2](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/46ab11ee-8275-406a-b443-2572d3b76d42)
 
 ## Manually move the robot
 Open a new terminal:
@@ -82,6 +86,7 @@ sudo apt install ros-foxy-turtlebot3*
 ```bash
 ros2 run turtlebot3_teleop teleop_keyboard --ros-args --remap /cmd_vel:=/demo/cmd_vel
 ```
+
 
 ## Simulation
 https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/e0bdb9b3-3da0-4e1c-961a-e032e239929c
