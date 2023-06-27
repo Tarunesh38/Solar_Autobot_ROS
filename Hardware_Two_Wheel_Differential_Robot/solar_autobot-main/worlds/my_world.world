@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+
+    <!-- Define the sun -->
+    <model name="sun">
+      <pose>0 0 1000 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>10</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://sun/materials/scripts</uri>
+              <uri>model://sun/materials/textures</uri>
+              <name>sun/yellow</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Define buildings -->
+    <model name="building1">
+      <pose>10 10 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>10 10 100</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://building1/materials/scripts</uri>
+              <uri>model://building1/materials/textures</uri>
+              <name>building1/gray</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="building2">
+      <pose>-10 20 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>8 12 120</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://building2/materials/scripts</uri>
+              <uri>model://building2/materials/textures</uri>
+              <name>building2/gray</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Add more buildings -->
+    <model name="building3">
+      <pose>20 -15 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>15 8 90</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://building3/materials/scripts</uri>
+              <uri>model://building3/materials/textures</uri>
+              <name>building3/gray</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Define grass -->
+    <model name="grass">
+      <pose>0 0 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>100 100 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://grass/materials/scripts</uri>
+              <uri>model://grass/materials/textures</uri>
+              <name>grass/green</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Define trees -->
+    <model name="tree1">
+      <pose>-15 15 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>1</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://tree1/materials/scripts</uri>
+              <uri>model://tree1/materials/textures</uri>
+              <name>tree1/brown</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree2">
+      <pose>20 20 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>1</radius>
+              <length>12</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://tree2/materials/scripts</uri>
+              <uri>model://tree2/materials/textures</uri>
+              <name>tree2/brown</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Define footpaths -->
+    <model name="footpath1">
+      <pose>-10 5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>100 2 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://footpath1/materials/scripts</uri>
+              <uri>model://footpath1/materials/textures</uri>
+              <name>footpath1/gray</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="footpath2">
+      <pose>5 -20 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2 40 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://footpath2/materials/scripts</uri>
+              <uri>model://footpath2/materials/textures</uri>
+              <name>footpath2/gray</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Define zebra crossings -->
+    <model name="zebra_crossing1">
+      <pose>0 5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>10 2 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://zebra_crossing1/materials/scripts</uri>
+              <uri>model://zebra_crossing1/materials/textures</uri>
+              <name>zebra_crossing1/white</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="zebra_crossing2">
+      <pose>0 -20 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2 20 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://zebra_crossing2/materials/scripts</uri>
+              <uri>model://zebra_crossing2/materials/textures</uri>
+              <name>zebra_crossing2/white</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>
+
