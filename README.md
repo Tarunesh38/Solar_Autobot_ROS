@@ -87,7 +87,7 @@ ros2 launch solar_robot_spawner_pkg gazebo_world.launch.py
 ```
 Again, Open a new Terminal and Type:
 ```bash
-sudo apt install ros-foxy-turtlebot3*
+sudo apt install ros-humble-turtlebot3*
 ```
 ```bash
 ros2 run turtlebot3_teleop teleop_keyboard --ros-args --remap /cmd_vel:=/demo/cmd_vel
@@ -115,4 +115,12 @@ In Rviz,
 
 ## Hardware
 ![Hardware](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/b4960dce-6e97-4154-9555-eb89739deaf9)
+
+## References
+```bash
+https://automaticaddison.com/how-to-simulate-a-robot-using-gazebo-and-ros-2/
+https://automaticaddison.com/how-to-create-an-object-following-robot-ros-2-navigation/
+https://classic.gazebosim.org/tutorials?tut=led_plugin
+http://models.gazebosim.org/
+```
 
