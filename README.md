@@ -13,10 +13,10 @@ The mechanical structure of the two-wheel differential robot consists of a centr
 *This project aims to simulate a Two-Wheel Autonomous Differential Drive Robot using ROS 2 and Gazebo. The novelty of this project lies in the implementation of a light detecting sensor that enables the robot to move towards the light.*
 
 ## Team Members - Batch - B_17
-_Taruneshwaran T    - CB.EN.U4AIE21170_\
-_Sanjay Chidambaram - CB.EN.U4AIE21160_\
+_Parthvi Manoj      - CB.EN.U4AIE21143_\
 _Sakthi Swaroopan S - CB.EN.U4AIE21159_\
-_Parthvi Manoj      - CB.EN.U4AIE21143_
+_Sanjay Chidambaram - CB.EN.U4AIE21160_\
+_Taruneshwaran T    - CB.EN.U4AIE21170_
 
 ## Requirements
 --> *_ROS2 Humble_*\
