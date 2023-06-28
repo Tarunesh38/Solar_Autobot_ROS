@@ -115,6 +115,5 @@ In Rviz,
 
 ## Hardware
 ![Hardware](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/b4960dce-6e97-4154-9555-eb89739deaf9)
-![Hardware2](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/141b4a8d-57b6-4013-83aa-e16cdc430444)
 
 ![66-660981_welcome-page-break-design-png](https://github.com/Tarunesh38/Solar_Autobot_Batch-B_17/assets/119646778/0d33ad8e-5e54-4bde-9094-514aa734f55f)
