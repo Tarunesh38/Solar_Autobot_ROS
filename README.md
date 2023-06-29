@@ -1,4 +1,4 @@
-# Solar Autobot
+# Solar Autobot - ROS
 ## Abstract
 
 *This project presents the design, development, and implementation of a two-wheel differential robot capable of autonomous movement and sunlight-based charging. The robot incorporates light sensors and a solar panel, to optimize solar energy capture and facilitate navigation toward light by sensing the color of the light. The Gazebo simulation environment and ROS2 framework are utilized to ensure testing, evaluation, and control of the robot's performance. The mechanical structure of the two-wheel differential robot consists of a central chassis connected to independently controlled wheels. The wheels are connected to the chassis, facilitating forward, backward, and turning motions.*
