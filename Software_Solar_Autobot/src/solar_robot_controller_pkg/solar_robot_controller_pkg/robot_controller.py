@@ -93,6 +93,7 @@ class Controller(Node):
 
         # Create an instance of CvBridge
         self.cv_bridge = CvBridge()
+        self.target_color = [255, 255, 255]
 
     def move_randomly(self):
         """
@@ -150,10 +151,38 @@ class Controller(Node):
         """
         # Convert the Image message to OpenCV format
         cv_image = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        # Find the centroid of the target color in the image
+        centroid = self.find_color_centroid(cv_image)
 
-        # Process the image data to follow the white light source
-        # ... Add your color following logic here ...
+        # Adjust the robot's velocity based on the centroid position
+        self.adjust_velocity(centroid)
 
+    def find_color_centroid(self, image):
+        # Convert the image to the HSV color space for easier color detection
+        hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+
+        # Define the range of the target color in HSV format
+        lower_color = np.array([0, 0, 200])
+        upper_color = np.array([180, 20, 255])
+
+        # Threshold the image to only keep pixels within the color range
+        mask = cv2.inRange(hsv_image, lower_color, upper_color)
+
+        # Find contours in the thresholded image
+        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+        # Find the centroid of the largest contour
+        if len(contours) > 0:
+            largest_contour = max(contours, key=cv2.contourArea)
+            M = cv2.moments(largest_contour)
+            if M['m00'] > 0:
+                cx = int(M['m10'] / M['m00'])
+                cy = int(M['m01'] / M['m00'])
+                centroid = (cx, cy)
+                return centroid
+
+        return None
+        
     def main(self):
         """
         Main function to control the robot
