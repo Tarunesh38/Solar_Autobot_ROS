@@ -22,7 +22,7 @@ _Taruneshwaran T    - CB.EN.U4AIE21170_
 --> *_Ubuntu 22.04_*\
 --> *_Gazebo Simulation tool_*\
 --> *_Rviz Vizualization tool_*\
---> *_OpenCV_*\
+--> *_OpenCV_*
 
 ## Setting up the package
 Step 1: Create a Workspace
